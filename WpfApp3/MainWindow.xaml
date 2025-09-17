@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="156*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="TxtDlugosc" HorizontalAlignment="Left" Margin="284,-30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="dlugosc[m]" HorizontalAlignment="Left" Height="27" Margin="10,10,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="10,37,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="78"/>
+        <Label Content="km" HorizontalAlignment="Left" Height="27" Margin="326,10,0,0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="2.041,0.416"/>
+        <Label Content="mile" HorizontalAlignment="Left" Height="27" Margin="155,10,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label Content="szybkosc[m/s]" HorizontalAlignment="Left" Height="27" Margin="10,73,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="TxtSzybkosc" HorizontalAlignment="Left" Height="31" Margin="10,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="78" Grid.RowSpan="2"/>
+        <Label Content="km/h" HorizontalAlignment="Left" Height="27" Margin="155,82,0,0" VerticalAlignment="Top" Width="78"/>
+        <Label Content="m/h" HorizontalAlignment="Left" Height="27" Margin="326,85,0,0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="2.041,0.416"/>
+        <Button x:Name="ObDlugosc" Content="Oblicz" HorizontalAlignment="Left" Height="32" Margin="538,21,0,0" VerticalAlignment="Top" Width="74" Click="ObDlugosc_Click"/>
+        <Button x:Name="ObSzybkosc" Content="Oblicz" HorizontalAlignment="Left" Height="32" Margin="538,104,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click" Grid.RowSpan="2"/>
+        <RadioButton x:Name="mila"  HorizontalAlignment="Left" Height="24" Margin="148,37,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.692,0.893"/>
+        <RadioButton x:Name="km"  HorizontalAlignment="Left" Height="24" Margin="303,44,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.692,0.893"/>
+        <RadioButton x:Name="kmh"  HorizontalAlignment="Left" Height="24" Margin="141,117,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.692,0.893" Grid.RowSpan="2"/>
+        <RadioButton x:Name="mh"  HorizontalAlignment="Left" Height="24" Margin="303,117,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.692,0.893" Grid.RowSpan="2"/>
+        <TextBlock x:Name="txtmile" HorizontalAlignment="Left" Height="20" Margin="165,41,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="68"/>
+        <TextBlock x:Name="txtkm" HorizontalAlignment="Left" Height="20" Margin="327,42,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="68"/>
+        <TextBlock x:Name="txtkmh" HorizontalAlignment="Left" Height="20" Margin="181,112,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="68" Grid.RowSpan="2"/>
+        <TextBlock x:Name="txtmh" HorizontalAlignment="Left" Height="20" Margin="327,112,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="68" RenderTransformOrigin="2.85,3.992" Grid.RowSpan="2"/>
+
+    </Grid>
+</Window>
